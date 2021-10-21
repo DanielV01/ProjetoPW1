@@ -1,0 +1,111 @@
+function valida(){
+    
+    //VALIDANDO TODOS OS CAMPOS
+    if(validarNome() && validarEmail() && validarSenha()){
+
+//        alert("Nome: "+document.getElementById("nome").value +"\nEmail: "+document.getElementById("email").value + "\nSenha: "+document.getElementById("senha").value);
+
+        return true;
+    }else{
+
+        return false;
+    }
+
+}
+
+// VALIDANDO NOME
+function validarNome(){
+    
+    var nome = document.getElementById("nome").value;
+    
+    if((nome.indexOf(" ") <=0) || (nome.indexOf(" ")+1 == nome.length) ){
+
+        
+        alert("Erro no campo do nome: Nome completo")
+        return false;
+
+    }
+    
+    return true;
+    
+}
+
+
+// VALIDANDO E-MAIL
+function validarEmail() {
+
+    var email = document.getElementById("email").value;
+
+    usuario = email.substring(0, email.indexOf("@"));
+    dominio = email.substring(email.indexOf("@")+ 1, email.length);
+    
+    if ((usuario.length >=1) && (dominio.length >=3) && (usuario.search("@")==-1) && (dominio.search("@")==-1) && (usuario.search(" ")==-1) && (dominio.search(" ")==-1) && (dominio.search(".")!=-1) && (dominio.indexOf(".") >=1)&& (dominio.lastIndexOf(".") < dominio.length - 1)) {
+
+        return true;
+
+    }
+    else{
+
+    
+        alert("Erro no campo do e-mail: coloque @ e .com no final");
+        return false
+
+    }
+
+}
+// VALIDANDO SENHA
+function validarSenha() {
+
+    var senha = document.getElementById("senha").value;
+    var numero = false;
+    var maiuscula = false;
+    var minuscula = false;
+
+    for (i=0 ; i<= senha.length; i++){
+
+        if((senha.charCodeAt(i) >= 65) && (senha.charCodeAt(i)) <= 90 ){
+
+            maiuscula = true;
+
+        } 
+
+    }
+
+    for (i=0 ; i<= senha.length; i++){
+
+        if((senha.charCodeAt(i) >= 97) && (senha.charCodeAt(i)) <= 122 ){
+
+            minuscula = true;
+
+        } 
+
+    }
+
+    for (i=0 ; i<= senha.length; i++){
+
+        if((senha.charCodeAt(i) >= 48) && (senha.charCodeAt(i)) <= 57 ){
+
+            numero = true;
+
+        } 
+
+    }
+
+    if(numero && minuscula && maiuscula){
+
+        return true;
+
+    }else{
+
+        alert("Erro no campo da senha: requer no minimo 1 letra maiuscula 1 letra minuscula e 1 numero")
+        return false;
+
+    }
+
+}
+
+function cep(){
+
+    
+
+}

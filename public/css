@@ -1,0 +1,110 @@
+body{
+    background-color: #4a535c;
+    
+    
+    
+}
+
+*{  margin: 0px;
+    padding: auto;
+    
+}
+/*forme*/
+#form{
+
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+/*carrosel*/
+#carouselExampleIndicators{
+    color: black;
+    margin-left: 190px;
+    margin-right: 190px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*imagens do carrosel*/
+.carousel-inner{
+
+    color: black;
+
+}
+/*geral cards*/
+.row{
+    border-color: #4a535c;
+    background-color: #4a535c;
+    padding-bottom: 20px;
+}
+
+/*imagens do card*/
+.card-img-top{
+    height: 200px;
+}
+#card-rodape{
+   margin-top: 20px; margin-bottom: 20px; margin-right: 19px;
+    background-color: #343a40;
+   
+}
+.card-body{
+    background-color: #343a40;/*#828282;*/
+}
+
+#card-hpa{
+    color: white;
+}
+
+#card-h{
+    color: white;
+
+}
+.card{
+    background-color: #343a40;
+}
+div.container-fluid{
+    background: fixed;
+    border: #343a40;
+    color: white;
+}
+
+#botao{
+    padding: 100px;
+    
+}
+
+#divbotao{
+    padding-left: 500px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#perg{
+    padding: 50px;
+    
+}
+
+#perg1{
+    padding: 50px;
+    margin-left: 50px;
+    
+}
+
+#divperg{
+    padding-left: 200px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+#perguntando{
+    color: white;
+    padding-left: 200px;
+    padding-top: 50px;
+
+
+}
+
+#central{
+    color: white;
+    padding-left: 480px;
+    padding-top: 50px;
+}
